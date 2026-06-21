@@ -1,4 +1,4 @@
-function getNumbers() {
+export function getNumbers() {
     let numbers = [];
     let input;
 
