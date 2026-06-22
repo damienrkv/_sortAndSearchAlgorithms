@@ -22,3 +22,21 @@ export function getNumbers() {
 
     return numbers;
 }
+
+export function getTarget() {
+    const input = prompt("Wenn du eine Zahl suchen möchtest, gib sie hier ein:");
+
+    if (input === null || input === "") {
+        console.log("keine Zahl eingegeben");
+        return null;
+    }
+
+    const target = Number(input);
+
+    if (isNaN(target)) {
+        console.log("Bitte eine gültige Zahl eingeben.");
+        return null;
+    }
+
+    return target;
+}
