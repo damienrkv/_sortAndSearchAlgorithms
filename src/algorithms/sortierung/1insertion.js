@@ -1,6 +1,8 @@
 export function insertionSort(arr) {
     let n = arr.length;
-    for (let i = 1; i < n; i++){
+
+    for (let i = 1; i < n; i++) {
+
         let key = arr[i];
         let j = i - 1;
 
@@ -10,6 +12,7 @@ export function insertionSort(arr) {
         }
         
         arr[j + 1] = key;
+        
         console.log(`Insert ${key} at position ${j + 1}`);
         console.log(arr);
     } 
