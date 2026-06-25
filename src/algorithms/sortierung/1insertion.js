@@ -9,6 +9,7 @@ export function insertionSort(arr) {
         while (j >= 0 && arr[j] > key) {
             arr[j + 1] = arr[j];
             j = j - 1;
+            console.log(`Move ${arr[j + 1]} to position ${j + 2}`);
         }
         
         arr[j + 1] = key;

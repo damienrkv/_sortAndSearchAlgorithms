@@ -10,13 +10,15 @@ import * as LinearSearch from "/src/algorithms/suche/lin.js";
 
 function main() {
 
+    let sortAlgortihm = prompt("Welche Sortiermethode möchtest du verwenden? (1) insertion, (2) selection, (3) bubble, (4) quick, (5) merge)");
     let numbers = Input.getNumbers();
-    console.log("Merge Sort:");
+    let algortihmType = {0: InsertionSort.insertionSort, 1: SelectionSort.selectionSort, 2: BubbleSort.bubbleSort, 3: QuickSort.quickSort, 4: MergeSort.mergeSort};
+    console.log(algortihmType[sortAlgortihm - 1].name + " ausgewählt");
     console.log("Original:");
     console.log(numbers);
 
     
-    let sortedNumbers = MergeSort.mergeSort([...numbers]);
+    let sortedNumbers = algortihmType[sortAlgortihm - 1](...numbers);
 
     console.log("Sorted:");
 
