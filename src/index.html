@@ -8,6 +8,25 @@
 
 <body>
     <h2>Sortier- & Suchalgorithmen</h2>
+    <div id="app">
+        <div id="input">
+            <input type="text" id="numberInput" placeholder="Zahlen eingeben (z.B. 5,3,8,1)">
+            <input type="number" id="randNumbers" placeholder="(optional) Größere Array für Zufallszahlen"
+                value="5"></input>
+            <button id="generateRandom">Array Generieren</button>
+            <div id="InputNumbers" class="row">
+            </div>
+            <select id="algorithmSelect">
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="bubble">Bubble Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="merge">Merge Sort</option>
+            </select>
+        </div>
+        <button>Sortieren</button>
+    </div>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="module" src="main.js"></script>
 </body>
 
